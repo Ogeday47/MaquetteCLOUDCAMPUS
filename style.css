@@ -1,53 +1,178 @@
+@import './texts.css';
+
 body{
-    margin: unset;
-    background: rgb(175, 175, 175);
-    font-family: 'Work Sans';
+	margin:unset;
+	font-family: 'Work Sans', sans-serif;
 }
 
 #navbar{
-    height: 80px;
-    background: #FFFFFF;
-    display: flex;
-    align-items: center;
-    
+	position:fixed;
+	top:0;
+	left:0;
+  right:0;
+	height:80px;
+	background:white;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 112px;
+	z-index: 10000;
 }
 
-#navitems{
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
-    display: flex;
-    align-items: center;
-    gap: 50px;
-    position: absolute;
-    right: 112px;
-    color: #14171F;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    
-    
-}
-#contactus{
-    color: #F9995D
+#navbar >.left{
+	display:flex;
+	align-items: center;
+	gap:14px;
 }
 
-#thebox{
-    position: absolute;
-    width: 111px;
-    height: 35px;
-    left: 164px;
-    top: 22px;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 35px;
-    color: #2947A9;
-    
+#navbar >.left >svg{
+	width:38px;
 }
-#img{
-    position: absolute;
-    width: 111px;
-    height: 35px;
-    left: 112px;
-    width:38px;
-    height: 47.5px;
-    
+#navbar >.left h2{
+	margin:unset;
+	font-size: 30px;
+	color: #2947A9;
+	font-weight: 700;
 }
+
+#navbar >.right{
+	display: flex;
+	gap:50px;
+}
+
+#navbar >.right >a{
+	font-size: 18px;
+	color: #14171F;
+	text-decoration: unset;
+}
+
+#navbar >.right >.orange{
+	color:#F9995D;
+	font-weight: 600;
+}
+
+#content{
+  margin-top: 80px;
+  background:orange;
+  height:44vw;
+  min-height: 646px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.9) 16.58%, rgba(255, 255, 255, 0) 72.38%), url(img/header.jpg);
+  background-size:cover;
+  background-position: center 30%;
+  padding-left:112px;
+  display:flex;
+  align-items: center;
+  position:relative;
+}
+
+#content >h1{
+	font-size: 85px;
+	color: #292E3D;
+	line-height: 95px;
+	font-weight: 600;
+}
+
+#content >.featuresProjects{
+	width:500px;
+	height:235px;
+	background:#3559C7;
+	position:absolute;
+	bottom:0;
+	right:0;
+	display:flex;
+	flex-direction: column;
+}
+#content >.featuresProjects >.text{
+	flex:1;
+	text-align: center;
+}
+#content >.featuresProjects >.text >h2{
+	margin:unset;
+	font-weight: 700;
+	color: #FFFFFF;
+	font-size: 24px;
+	margin-top: 25px;
+}
+#content >.featuresProjects >.text >p{
+	margin:unset;
+	font-size: 28px;
+	line-height: 35px;
+	color: #FFFFFF;
+	margin-top: 25px;
+	padding: 0 30px;
+}
+#content >.featuresProjects >.navigation{
+	height:52px;
+	background:rgb(255, 255, 255);
+	display: flex;
+	gap:1px;
+}
+#content >.featuresProjects >.navigation >button{
+	width:50%;
+	border:unset;
+	background: #292E3D;
+	font-size: 20px;
+	color:#fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap:12px;
+	line-height: 20px;
+}
+#content >.featuresProjects >.navigation >button >svg{
+	width:30px;
+}
+#content >.featuresProjects >.navigation >.btn-next{
+	flex-direction: row-reverse;
+}
+#content >.featuresProjects >.navigation >.btn-next >svg{
+	transform: rotate(180deg);
+}
+
+
+#reputation{
+	padding: 70px 0 110px 0;
+}
+
+#reputation >h2{
+	text-align: center;
+}
+
+#reputation >.arguments{
+	margin-top: 62px;
+	display:flex;
+	justify-content: center;
+	gap:75px;
+
+}
+
+#reputation >.arguments >.card{
+	width: 360px;
+	box-sizing: border-box;
+	padding: 26px 26px 48px;
+	border: 1px solid #E0E3EB;
+	border-radius: 4px;
+}
+
+#reputation >.arguments >.card >svg{
+	width: 50px;
+}
+
+#reputation >.arguments >.card >h3{
+	color:#3D445C;
+	font-size: 26px;
+	font-weight: 700;
+	margin:unset;
+	margin-top: 18px;
+}
+
+#reputation >.arguments >.card >p{
+	margin:unset;
+	color : #858EAD;
+	margin-top: 18px;
+	font-size: 19px;
+	line-height: 24px;
+}
+
+
+
