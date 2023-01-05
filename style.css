@@ -237,7 +237,6 @@ color: #FFFFFF;
 	height: 70px;
 	background: #FFFFFF;
 	color: #2947A9;
-	display: flex;
 	align-items: center;
 	justify-content: center;
 	border-radius: 6px;
@@ -246,5 +245,6 @@ color: #FFFFFF;
 	font-size: 22px;
 	margin-top: 98px;
 	margin-left: 53px;
+	
 
 }
