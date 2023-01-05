@@ -175,4 +175,76 @@ body{
 }
 
 
+#aboutus{
+	margin-top: 74px;
+	margin-bottom: 200px;
 
+}
+#aboutus>.content{
+	width: 1600px;
+	height: 890px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+#aboutus>.content>.avatar{
+  height: 100%;
+  display: inline-block;
+  box-shadow: 0px 20px 24px -4px rgba(17, 24, 39, 0.1), 0px 8px 8px -4px rgba(17, 24, 39, 0.04);
+  border-radius: 2px;
+
+}
+#aboutus>.content>.avatar>img{
+	border-radius: 2px;
+	height: 100%;
+}
+
+#aboutus>.content>.textabout{
+	background: #2947A9;
+	width: 650px;
+	height: 695px;
+	position: absolute;
+	right: 0px;
+	top: 50%;
+	transform: translateY(-50%);
+	box-shadow: 0px 20px 24px -4px rgba(17, 24, 39, 0.1), 0px 8px 8px -4px rgba(17, 24, 39, 0.04);
+	border-radius: 2px;
+	
+
+}
+#aboutus>.content>.textabout>h1{
+	font-weight: 700;
+	font-size: 45px;
+	line-height: 42px;
+	color: #FFFFFF;
+	margin-left: 53px;
+	margin-top: 66px;
+
+
+}
+#aboutus>.content>.textabout>p{
+	font-weight: 400;
+font-size: 26px;
+line-height: 30px;
+margin-left: 53px;
+margin-top: 66px;
+color: #FFFFFF;
+}
+
+#aboutus>.content>.textabout>button{
+	display: block;
+	width: 291px;
+	height: 70px;
+	background: #FFFFFF;
+	color: #2947A9;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 6px;
+	border: 2px solid #2947A9;
+	font-weight: 600;
+	font-size: 22px;
+	margin-top: 98px;
+	margin-left: 53px;
+
+}
